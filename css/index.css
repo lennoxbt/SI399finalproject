@@ -1,0 +1,143 @@
+.smaller {
+    margin: 0 30px 0 0;
+
+}
+
+.news {
+    margin: 0 30px 0 0;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column1 {
+    flex: 100%;
+    max-width: 100%;
+}
+
+.column1 .middle-two, .column1 .last-two {
+    display: none;
+}
+  
+.news img {
+    height: auto;
+    max-width: 90%;
+    justify-content: center;
+    margin: 30px;
+    border: 4px solid #000000;
+    border-radius: 20px;
+}
+  
+.news img:hover {
+    filter: drop-shadow(4px 4px 4px #b0b0b0);
+    transform:scale(1.02);
+    transition: all 0.7s;
+}
+
+.news img:focus {
+    filter: drop-shadow(4px 4px 4px #b0b0b0);
+    transform:scale(1.02);
+    transition: all 0.7s;
+}
+
+.followbuttons {
+    text-align: center;
+}
+.row2 {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+  
+.instagram {
+    height: 100%;
+}
+
+.instagram img, .youtube img, .spotify img {
+    width: 30%;
+    margin: 0 0 0 70px;
+    vertical-align: middle;
+    border: none;
+}
+  
+.spotify {
+    height: 100%;
+}
+
+.column img:hover {
+    filter: drop-shadow(9px 9px 9px #b0b0b0);
+    transform:scale(1.02);
+    transition: all 0.7s;
+}
+
+.blue-button .news img {
+    border: 4px solid #000000;
+    border-radius: 20px;
+}
+
+.blue-button .row2, .blue-button .column2 {
+    color: #FFFFFF;
+}
+
+.blue-button .instagram img, .blue-button .youtube img, .blue-button .spotify img {
+    border: none;
+}
+
+/* Tablet Media Query */
+@media screen and (min-width: 600px) {
+    .column1 {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .column1 img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .column1 .middle-two {
+        display: inline-flex;
+    }
+
+    .column1 .last-two {
+        display: none;
+    }
+
+    .instagram img, .youtube img, .spotify img {
+        margin: 0 0 0 100px;
+    }
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 800px) {
+    .column1 {
+        flex: 33%;
+        max-width: 33%;
+    }
+
+    .column1 .last-two {
+        display: inline-flex;
+    }
+
+    .column1 img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    
+    .instagram img, .youtube img, .spotify img {
+        margin: 0 0 0 115px;
+    }
+}

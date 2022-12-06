@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/lufavicon.png">
+    <!-- Stylesheet Imports -->
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Space+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to Main Content</a></div>
+    <header>
+      <nav>
+        <a href="index.html"><img src="images/lufavicon.png" alt="Kelsey Lu initials"></a>
+        <title class="name">Kelsey Lu Fan Page</title>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li class="current"><a href="about.html">AboutLu</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><button class="toggle" onclick="myFunction()">🔵</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" tabindex="0">
+      <h1 id="heading">About Kelsey Lu</h1>
+      <div class="container"> <!-- *** about-content = container -->
+        <img class="luaboutpage" src="images/luaboutpage.png" alt="Image of Kelsey Lu posing for a magazine shoot">
+        <img class="lu2" src="images/Lu2.png" alt="Kelsey Lu posing for Miu Miu (1/2). Hair accessories are the main highlight of this picture">
+        <img class="lu3" src="images/Lu3.png" alt="Kelsey Lu posing for Miu Miu (2/2) Bright green shoes are the highlight of this picture.">
+        <p class="first-paragraph">Kelsey Elizabeth McJunkins, known professionally as Kelsey Lu, is an American singer and cellist based in Los Angeles, California.</p>
+        <img class="lu4" src="images/Lu4.png" alt="Closeup photo of Kelsey Lu, peacock feathered details are the highlight of this photo">
+        <img class="lu5" src="images/lu5.png" alt="Kelsey Lu in a large open greenhouse. Greenery surrounds her">
+        <img class="lu13" src="images/lu13.png" alt="Kelsey Lu in a parking lot. Trees are behind her">
+        <p class="second-paragraph">Lu began studying classical composition at age 6, learning piano, violin, and cello.</p>
+        <img class="lu19" src="images/lu19.png" alt="Kelsey Lu posing for MiuMiu again. New clothing, resin jewelery are the highlight of this picture.">
+        <img class="lu18" src="images/lu18.png" alt="Kelsey Lu posing on her bed. She is wearing a bright mageneta trench coat.">
+        <img class="lu10" src="images/lu10.png" alt="Kelsey Lu Posing for MiuMiu yet again. Brown outfit, she has a short bob haircut">
+        <p class="third-paragraph">At age 18 Lu left home to attend the University of North Carolina School of the Arts on a full scholarship.</p>
+        <p class="fourth-paragraph">Following their first year, Lu dropped out and began making music.</p>
+      </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form"
+      action="https://formspree.io/f/xaykrojb"
+      method="POST"
+    >
+
+      <label>
+        Have any Kelsey News you'd like to see? Let us know!
+      </label>
+      <br/><br/>
+      <label>
+        Please state your name/alias:
+        <input type="name" name="name" placeholder="Ex. John Doe">
+      </label>
+      <br/><br/>
+      <label>
+        Please provide your email:
+        <input type="email" name="email" placeholder="Ex. asdfg@gmail.com">
+      </label>
+      <br/><br/>
+      <label>
+        Please write your message:
+        <textarea name="message" placeholder="Ex. Kelsey Lu's Grammy Nomination"></textarea>
+      </label>
+      <br/><br/>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
+      
+  </main>
+  <footer>
+      <p> Copyright &copy; 2022, Lennox Thomas. All Rights Reserved</p>
+  </footer>
+  <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("blue-button");
+    }
+  </script>
+</body>
+</html>
